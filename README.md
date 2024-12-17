@@ -64,7 +64,7 @@ This repository contains the implementation of **Conditional Cyclic Variational 
 ## Setup  
 ### 1. Clone the repository  
 ```bash
-git clone https://github.com/VictorSungminYou/Fetal_Brain_AnomalyDetection
+git clone https://github.com/VictorSungminYou/Fetal-Brain-AnomalyDetection
 cd CCVAEGAN_Fetal_Brain_AnomalyDetection
 ```
 
