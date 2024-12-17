@@ -27,7 +27,7 @@ This repository contains the implementation of **Conditional Cyclic Variational 
 │   ├── train/                      # Training images (TD, i.e., normal)
 │   └── test/                       # Test images (TD and anomalies)
 │
-├── models/                         # Trained model weights
+├── models/                         # Trained model weights (To be uploaded)
 │   └── CCVAEGAN                    # Pretrained CCVAEGAN weights
 |        ├── encoder.pth
 |        ├── decoder.pth
