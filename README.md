@@ -37,7 +37,7 @@ This repository contains the implementation of **Conditional Cyclic Variational 
 │   ├── main.py                     # Main code to run CCVAEGAN framework
 │   ├── train_framework.py          # Training implementation
 │   ├── evaluation_framework.py     # Evaluation and anomaly detection including visualization implementation
-|   ├── utils/                            
+|   └── utils/                            
 │       ├── eval_utils.py           # Evaluation functions
 │       ├── loss.py                 # Loss functions
 │       ├── metric.py               # Evaluation metric
