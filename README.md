@@ -99,6 +99,7 @@ Use Jupyter notebooks to perform analysis including post-organization:
 
 ## Singularity Deloyment
 Use following Singularity image to run CCVAEGAN with pre-trained weights.
+
 https://www.dropbox.com/scl/fi/cq42n9of4kkdgahuzfd1f/fetal_anomaly_detection.sif?rlkey=f3jgm0mprg7qdbef2rwnitg8h&st=tyh938zj&dl=0  
 
 ### It requires following data structure.
@@ -112,12 +113,16 @@ https://www.dropbox.com/scl/fi/cq42n9of4kkdgahuzfd1f/fetal_anomaly_detection.sif
 singularity run --no-home -B data_path:/data --nv path_to_SIF model path_to_Info.csv anomaly_map_option vis_threshold_MAE vis_threshold_MSE GPU_id
 ```
 path_to_Info.csv : The file contains demographic information with subject key. Refer the example (Info_example.csv)
+
 anomaly_map_option: option to plot anomaly maps (‘center’: only center slide (idx=14), ‘all’: save all 30 slices (it take much longer), ‘no’: Compute score only without saving anomaly map)
+
 vis_threshold_MAE: visualization range of MAE anomaly map (‘auto’ is allowed)
+
 vis_threshold_MSE: visualization range of MSE anomaly map (‘auto’ is allowed)
+
 GPU_id: The GPU ID number to run the model (0, 1, ...)
 
-Example
+#### Example
 ```
 singularity run --no-home -B ./:/data --nv fetal_anomaly_detection.sif /data/Demo_info.csv 'center' 0.4, 0.08 0
 ```
