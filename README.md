@@ -27,16 +27,24 @@ This repository contains the implementation of **Conditional Cyclic Variational 
 │   ├── train/                      # Training images (TD, i.e., normal)
 │   └── test/                       # Test images (TD and anomalies)
 │
-├── models/                         # Trained model weights (To be uploaded)
-│   └── CCVAEGAN                    # Pretrained CCVAEGAN weights
-|        ├── encoder.pth
-|        ├── decoder.pth
-|        └── dis_GAN.pth            
+├── Weights/                        # Trained model weights (To be uploaded)
+│   ├── mixed_cohort                # Pretrained model weights from experiments
+│   │   └── CCVAEGAN                    
+|   │       ├── encoder.pth
+|   │       ├── decoder.pth
+|   │       └── dis_GAN.pth            
+|    └── external_validation
+|        └── CCVAEGAN
+|           ├── encoder.pth
+|           ├── decoder.pth
+|           └── dis_GAN.pth            
 │
 ├── src/                            # Source code
 │   ├── main.py                     # Main code to run CCVAEGAN framework
 │   ├── train_framework.py          # Training implementation
 │   ├── evaluation_framework.py     # Evaluation and anomaly detection including visualization implementation
+│   ├── models/                         # Trained model weights
+│   │   ├── CCVAEGAN.py                 # Model strucutre
 |   └── utils/                            
 │       ├── eval_utils.py           # Evaluation functions
 │       ├── loss.py                 # Loss functions
