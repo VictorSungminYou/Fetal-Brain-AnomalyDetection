@@ -112,7 +112,7 @@ https://www.dropbox.com/scl/fi/cq42n9of4kkdgahuzfd1f/fetal_anomaly_detection.sif
 ```
 singularity run --no-home -B data_path:/data --nv path_to_SIF model path_to_Info.csv anomaly_map_option vis_threshold_MAE vis_threshold_MSE GPU_id
 ```
-path_to_Info.csv : The file contains demographic information with subject key. Refer the example (Info_example.csv)
+path_to_Info.csv : The file contains demographic information with subject key. Refer the format of example file (Info_example.csv)
 
 anomaly_map_option: option to plot anomaly maps (‘center’: only center slide (idx=14), ‘all’: save all 30 slices (it take much longer), ‘no’: Compute score only without saving anomaly map)
 
