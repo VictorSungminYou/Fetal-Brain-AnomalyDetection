@@ -135,3 +135,12 @@ GPU_id: The GPU ID number to run the model (0, 1, ...)
 singularity run --no-home -B ./:/data --nv fetal_anomaly_detection.sif /data/Demo_info.csv 'center' 0.4, 0.08 0
 ```
 
+After running the model, two files will be created.
+
+Score_pred.csv: Subject-wise anomaly score by computing mean scores for 30 slices
+
+It will contain Subject_ID, GT_GA, score_L1, score_L2, score_SSIM, score_MSSIM, score_1-SSIM, and score_1-MSSSIM.
+
+Score_pred_slice.csv: Anomaly score computed for each slides
+
+It will contain Subject_ID, Slice_index, GT_GA, score_L1, score_L2, score_SSIM, and score_MSSIM.
