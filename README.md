@@ -98,10 +98,6 @@ Run anomaly detection on test data:
 python Src/main.py --task Evaluation ...
 ```
 
-### 3. Analysis of output score files  
-Use Jupyter notebooks to perform analysis including post-organization:  
-
----
 
 ## Singularity Deloyment
 Use following Singularity image to run CCVAEGAN with pre-trained weights.
