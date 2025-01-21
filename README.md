@@ -50,8 +50,6 @@ This repository contains the implementation of **Conditional Cyclic Variational 
 │       ├── loss.py                 # Loss functions
 │       ├── metric.py               # Evaluation metric
 │       └── util.py                 # General Helper functions
-├── notebooks/                      # Jupyter notebooks for experiments
-│   └── Outcome_analysis.ipynb      # Analysis of anomaly score
 │
 ├── results/                        # Results directory (Not included)
 │
