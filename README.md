@@ -111,6 +111,9 @@ https://www.dropbox.com/scl/fi/cq42n9of4kkdgahuzfd1f/fetal_anomaly_detection.sif
 ### It requires following data structure.
 ```
 ├── MRI/                           # Data directory contains MRI files
+│   ├──SubjectID_xzz.nii           # MRI filename must start with SubjectID in Info file.
+│   ├── ...
+│   └──SubjectID_xxx.nii
 └── Info.csv                       # CSV file contains demographic information (mainly GA and Sex)
 ```
 
